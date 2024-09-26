@@ -1,16 +1,19 @@
 nav {
+    color: white;
     background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
     color: white;
+    background-color: steelblue;
     display: block;
     padding: 20px;
 }
 
 h1 {
     color: steelblue;
+    background-color: white;
 }
 
 main img {
@@ -22,7 +25,7 @@ main img {
 }
 
 main {
-    max-width: auto;
+    width: auto;
 }
 
 p {

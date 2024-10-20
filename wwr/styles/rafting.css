@@ -35,6 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--background-color);
     color: var(--font-color);
     text-align: center;
     font-size: 125%;
@@ -43,6 +44,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    background-color: var(--background-color);
     color: var(--font-color);
 }
 
@@ -52,7 +54,7 @@ nav a {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    background-color: var(--accent-color);
+    background-color: white;
     color: var(--font-color);
     padding: 1%;
     margin: 1%;
@@ -63,6 +65,7 @@ h1 {
     font-family: var(--heading-font-family);
     font-size: 2rem;
     text-align: center;
+    background-color: white;
     color: var(--font-color);
     grid-row: 1;
 }
@@ -112,6 +115,7 @@ h1 {
 h2 {
     font-family: var(--heading-font-family);
     font-size: 2rem;
+    background-color: white;
     color: var(--font-color);
     text-align: center;
     margin: 1%;
@@ -120,6 +124,7 @@ h2 {
 .history-container {
     display: flex;
     background-color: var(--background-color);
+    color: var(--font-color);
     border-radius: 10px;
     gap: 1rem;
     margin: 1%;
@@ -139,6 +144,7 @@ h2 {
 h3 {
     font-family: var(--heading-font-family);
     font-size: 1.5rem;
+    background-color: white;
     color: var(--font-color);
     text-align: center;
     margin: 1%;
@@ -147,6 +153,7 @@ h3 {
 .adventures {
     display: grid;
     background-color: var(--accent-color);
+    color: var(--font-color);
     grid-template-columns: repeat(5, 1fr);
     margin: 1%;
     border-radius: 10px;
@@ -161,6 +168,64 @@ figure img {
 
 .adventures figcaption {
     color: var(--font-color);
+    background-color: var(--accent-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2%;
+    grid-row: 2;
+}
+
+.company_info {
+    display: grid;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    grid-template-columns: 1fr;
+    margin: 1%;
+    border-radius: 10px;
+    align-items: flex-end;
+}
+
+.company_info p {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2%;
+    grid-column: 1;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 25rem;
+    padding-bottom: 1%;
+    border: 0;
+    border-radius: 10px;
+    grid-column: 1;
+}
+
+.employees {
+    display: grid;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.employees img {
+    width: 10rem;
+    height: auto;
+    border-radius: 5px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.employees figcaption {
+    color: var(--font-color);
+    background-color: var(--accent-color);
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
@@ -172,6 +237,7 @@ footer {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
     color: var(--font-color);
+    background-color: var(--background-color);
     padding: 1%;
     margin: 1%;
     border-radius: 10px;
@@ -182,4 +248,67 @@ footer img {
     width: 25px;
     height: auto;
     padding: 5px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: var(--font-color);
+    display: grid;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--font-color);
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 1rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: bottom;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b85e10;
+    color: var(--font-color)
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr;
+    margin: 10px 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
 }

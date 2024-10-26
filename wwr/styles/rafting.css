@@ -1,5 +1,5 @@
 :root {
-    --accent-color: #D16200;
+    --accent-color: #823d01;
     --background-color: #6fd0d3;
     --font-color: #3A3017;
     --font-family: 'Montserrat', sans-serif;
@@ -11,7 +11,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-}
+    }
 
 header {
     display: grid;
@@ -138,7 +138,7 @@ h2 {
     width: 50%;
     height: auto;
     border-radius: 10px;
-    margin: 1%
+    margin: 1%;
 }
 
 h3 {
@@ -167,7 +167,7 @@ figure img {
 }
 
 .adventures figcaption {
-    color: var(--font-color);
+    color: white;
     background-color: var(--accent-color);
     text-align: center;
     font-size: 1rem;
@@ -224,7 +224,7 @@ figure img {
 }
 
 .employees figcaption {
-    color: var(--font-color);
+    color: white;
     background-color: var(--accent-color);
     text-align: center;
     font-size: 1rem;
@@ -234,6 +234,7 @@ figure img {
 }
 
 footer {
+    width: 98%;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
     color: var(--font-color);
@@ -287,15 +288,15 @@ input[type="checkbox"] {
 
 button {
     padding: 1rem 2rem;
-    background-color: var(--accent-color);
-    color: #fff;
+    background-color: var(--background-color);
+    color: black;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
     background-color: #b85e10;
-    color: var(--font-color)
+    color: white
 }
 
 .form-item {
@@ -311,4 +312,137 @@ button:hover {
 .column2 {
     grid-template-columns: 1fr 2fr;
     margin: 10px 0;
+}
+
+.full-width-image {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    grid-template-rows: 3;
+}
+
+.cta, .newsletter_form {
+    flex: 1;
+    margin: 10px;
+}
+
+.cta a {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.newsletter_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.trip {
+    font-family: var(--heading-font-family);
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: white;
+    grid-column: 1;
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.trip_img {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--background-color);
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    grid-column: 2;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.offerings {
+    display: grid;
+    background-color: var(--accent-color);
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1%;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    border-color: var(--accent-color)
+}
+
+table th {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1%;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border-radius: 10px;
+    gap: 1rem;
+    margin: 1%;
+}
+
+.contact-container p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-button {
+    background-color: white;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    padding: 1rem 2rem;
+    margin: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: grey;
 }
